@@ -1,0 +1,497 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+    font-family: Tahoma, sans-serif;
+    background: #f5f3ef;
+    color: #17243B;
+}
+
+header {
+    background: #641B2B;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 5px solid #C6A04A;
+}
+
+header h1 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #E8D5A5;
+}
+
+nav {
+    background: #17243B;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #C6A04A;
+}
+
+.hero {
+    background: linear-gradient(135deg,#C6A04A,#641B2B,#17243B);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+    border-bottom: 5px solid #C6A04A;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 2.5;
+    color: #F1DFB2;
+}
+
+.hero a {
+    display: inline-block;
+    background: #C6A04A;
+    color: #17243B;
+    text-decoration: none;
+    padding: 13px 28px;
+    margin-top: 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    color: #641B2B;
+    margin: 45px 0 25px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 5%;
+}
+
+.course {
+    background: white;
+    border: 1px solid #C6A04A;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 10px;
+    transition: 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.course h3 {
+    color: #641B2B;
+    margin-bottom: 15px;
+}
+
+.course a {
+    color: #17243B;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.about {
+    background: white;
+    margin: 40px 5%;
+    padding: 30px;
+    border-right: 5px solid #C6A04A;
+    line-height: 2.5;
+}
+
+.news {
+    margin: 40px 5%;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    line-height: 2.5;
+}
+
+footer {
+    background: #17243B;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 2.5;
+    border-top: 4px solid #C6A04A;
+}
+
+@media (max-width: 750px) {
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 450px) {
+    .courses {
+        grid-template-columns: 1fr;
+    }
+}
+/* منوی کناری سمت راست */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #17243B;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    color: #C6A04A;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C6A04A;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 12px;
+    margin: 7px 0;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #641B2B;
+    color: #C6A04A;
+}
+
+/* جابه جایی محتوای سایت */
+
+body {
+    margin-right: 230px;
+}
+
+/* نمایش بهتر در موبایل */
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    body {
+        margin-right: 180px;
+    }
+}
+/* تنظیمات کلی سایت */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f5f3f0;
+    color: #263044;
+    line-height: 1.9;
+}
+
+/* هدر حرفه ای */
+.header {
+    background: linear-gradient(135deg, #17243B, #641B2B);
+    color: white;
+    padding: 55px 25px;
+    text-align: center;
+    border-bottom: 5px solid #C6A04A;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+    color: #C6A04A;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* عنوان بخش ها */
+.section-title {
+    color: #641B2B;
+    text-align: center;
+    font-size: 25px;
+    margin: 35px 0;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    background: #C6A04A;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* کارت های حرفه ای */
+.course-card {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    border-bottom: 4px solid #C6A04A;
+    transition: 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.course-card h3 {
+    color: #641B2B;
+}
+
+/* دکمه ها */
+.btn {
+    display: inline-block;
+    background: #641B2B;
+    color: white;
+    padding: 11px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #C6A04A;
+    color: #17243B;
+    transform: translateY(-3px);
+}
+
+/* کادرهای معرفی */
+.about-box {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    border-right: 5px solid #C6A04A;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    margin: 25px 0;
+}
+
+/* تصاویر */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* پاورقی */
+.footer {
+    background: #17243B;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 4px solid #C6A04A;
+}.footer .designer {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.footer .designer span {
+    color: white;
+    display: block;
+	font-size: 25px;
+}
+
+.footer .designer strong {
+    color: #C6A04A;
+    display: block;
+    font-size: 19px;
+    margin-top: 5px;
+}
+/* اصلاح جایگاه بنر در تمام صفحات */
+
+.header {
+    display: block !important;
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    line-height: 0;
+}
+
+.header h1,
+.header p {
+    display: none !important;
+}
+
+.header .site-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+.welcome-section {
+    background: #F5F3F0;
+    text-align: center;
+    padding: 55px 20px;
+    margin: 25px;
+    border-radius: 14px;
+}
+
+.welcome-section h2 {
+    color: #641B2B;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.welcome-line {
+    width: 75px;
+    height: 4px;
+    background: #C6A04A;
+    margin: 15px auto 25px;
+    border-radius: 10px;
+}
+
+.welcome-section p {
+    color: #17243B;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 2.2;
+    margin: 20px auto;
+    max-width: 950px;
+}
+
+.welcome-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #641B2B;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.welcome-btn:hover {
+    background: #C6A04A;
+    color: #17243B;
+}
+/* اصلاح کامل نمایش سایت در موبایل */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin-right: 0 !important;
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* بنر در بالای صفحه */
+    .header {
+        order: -1;
+        width: 100%;
+    }
+
+    .header .site-banner {
+        width: 100%;
+        height: auto;
+    }
+
+    /* تبدیل منوی کناری به منوی افقی */
+    .sidebar {
+        position: relative !important;
+        top: auto;
+        right: auto;
+        width: 100% !important;
+        height: auto !important;
+        padding: 12px 8px !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    .sidebar h3 {
+        width: 100%;
+        margin: 5px 0;
+        padding-bottom: 10px;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        padding: 9px 12px;
+        margin: 3px;
+        font-size: 13px;
+    }
+
+    /* بخش اصلی سایت */
+    .welcome-section {
+        margin: 12px;
+        padding: 30px 12px;
+    }
+
+    .welcome-section h2 {
+        font-size: 22px;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .container,
+    .contact-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        margin: 0 auto;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}

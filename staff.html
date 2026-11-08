@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کادر آموزشی هنرستان</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .staff-intro {
+            line-height: 2.2;
+            text-align: justify;
+        }
+
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .staff-card {
+            background: white;
+            padding: 25px 18px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-bottom: 4px solid #C6A04A;
+            transition: 0.3s;
+        }
+
+        .staff-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .staff-icon {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: #17243B;
+            color: #C6A04A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+        }
+
+        .staff-card h3 {
+            color: #641B2B;
+            margin-bottom: 12px;
+        }
+
+        .staff-card p {
+            color: #555;
+            line-height: 2;
+        }
+
+        .staff-message {
+            background: #f5f0e8;
+            border-right: 5px solid #C6A04A;
+            border-radius: 10px;
+            padding: 25px;
+            line-height: 2.2;
+            margin-top: 25px;
+        }
+
+        .staff-message h3 {
+            color: #641B2B;
+        }
+
+        @media (max-width: 850px) {
+            .staff-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .staff-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>کادر آموزشی و اجرایی هنرستان</h1>
+        <p>معرفی عوامل آموزشی و کارکنان هنرستان</p>
+    </header>
+
+    <aside class="sidebar">
+        <h3>منوی اصلی</h3>
+        <a href="index.html">صفحه اصلی</a>
+        <a href="moarefi.html">درباره هنرستان</a>
+        <a href="reshteh.html">رشته های تحصیلی</a>
+        <a href="news.html">اخبار و اطلاعیه ها</a>
+        <a href="gallery.html">گالری تصاویر</a>
+        <a href="staff.html">کادر آموزشی</a>
+        <a href="contact.html">تماس با ما</a>
+    </aside>
+
+    <main>
+
+        <section class="hero">
+            <h2>معرفی کادر آموزشی</h2>
+            <p>
+                پیشرفت و موفقیت هنرجویان نتیجه تلاش،
+                همکاری و همراهی مجموعه آموزشی است.
+                مدیریت، دبیران، هنرآموزان و کارکنان هنرستان
+                در مسیر آموزش و پرورش استعدادهای هنرجویان نقش مهمی دارند.
+            </p>
+        </section>
+
+        <section class="container">
+
+            <h2 class="section-title">معرفی مسئولان و کارکنان</h2>
+
+            <p class="staff-intro">
+                کادر آموزشی و اجرایی هنرستان با برنامه ریزی،
+                آموزش، راهنمایی و پشتیبانی از هنرجویان تلاش می کنند
+                محیطی مناسب برای یادگیری، رشد علمی و کسب مهارت
+                فراهم کنند. هر یک از اعضای این مجموعه با انجام
+                مسئولیت های خود در پیشرفت هنرستان سهیم هستند.
+            </p>
+
+            <div class="staff-grid">
+
+                <div class="staff-card">
+                    <div class="staff-icon">★</div>
+                    <h3>مدیر هنرستان</h3>
+                    <p>سرکار خانوم:حیدری سرشت</p>
+                    <p>
+                        مسئول برنامه ریزی، مدیریت امور آموزشی
+                        و اجرایی و نظارت بر فعالیت های هنرستان.
+                    </p>
+                </div>
+				<div class="staff-card">
+                    <div class="staff-icon">✦</div>
+                    <h3>معاون آموزشی</h3>
+                    <p>سرکار خانوم:تقیان</p>
+                    <p>
+                        مسئول پیگیری امور درسی، برنامه های آموزشی،
+                        امتحانات و فعالیت های تحصیلی هنرجویان.
+                    </p>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-icon">◆</div>
+                    <h3>معاون اجرایی</h3>
+                    <p>سرکار خانوم:نامدار</p>
+                    <p>
+                        مسئول رسیدگی به امور اداری، پرونده های تحصیلی
+                        و هماهنگی فعالیت های اجرایی هنرستان.
+                    </p>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-icon">?</div>
+                    <h3>مشاور مدرسه</h3>
+                    <p>سرکار خانوم:حق شناس</p>
+                    <p>
+                        راهنمایی هنرجویان در زمینه مسائل تحصیلی،
+                        انتخاب مسیر آینده و رشد فردی.
+                    </p>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-icon">✎</div>
+                    <h3>دبیران و هنرآموزان</h3>
+                    <p>سرکار خانوم:اسماعیلی<br>
+					سرکار خانوم:حاتمی<br>
+					سرکار خانوم:سهرابی<br>
+					سرکار خانوم:محمد<br>
+					جناب آقای:سهرابی<br>
+					سرکار خانوم:مسعودی<br>
+					سرکار خانوم:حیدری<br>
+					سرکار خانوم:شفیعی<br>
+					سرکار خانوم:بدیع زادگان<br>
+					سرکار خانوم:عابدی<br>
+					سرکار خانوم:بیگی<br>
+						سرکار خانوم:باقری<br>
+						سرکار خانوم:فاضلی<br>
+						سرکار خانوم:تقی زاده<br>
+						سرکار خانوم:تقیان<br>
+						سرکار خانوم:زارعی<br>
+						سرکار خانوم:رحیمی<br>
+						سرکار خانوم:آهکی<br>
+						سرکار خانوم:اصغری<br>
+						سرکار خانوم:نامدار<br>
+						سرکار خانوم:شهباز<br>
+						
+					</p>
+                    <p>
+                        آموزش دروس نظری و مهارتی و کمک به
+                        تقویت دانش و توانایی های تخصصی هنرجویان.
+                    </p>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-icon">●</div>
+                    <h3>نیروی خدماتی و سرایدار هنرستان</h3>
+                    <p>جناب اقای:احمدی</p>
+                    <p>
+                        همکاری در انجام امور روزانه و فراهم کردن
+                        شرایط مناسب برای فعالیت های هنرستان.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">نقش کادر آموزشی در پیشرفت هنرجویان</h2>
+
+            <div class="staff-message">
+                <h3>آموزش، همراهی و آینده سازی</h3>
+                <p>
+                    معلمان و هنرآموزان علاوه بر انتقال دانش و مهارت،
+                    در شناسایی استعدادها، تقویت خلاقیت و پرورش
+                    توانایی های فردی هنرجویان نقش ارزشمندی دارند.
+                    همراهی خانواده ها و تلاش کادر آموزشی می تواند
+                    زمینه ساز موفقیت بیشتر هنرجویان در مسیر تحصیل
+                    و زندگی حرفه ای باشد.
+                </p>
+            </div>
+        </section>
+
+    <section class="container">
+   <div class="container" style="text-align:center; margin:30px auto;">
+    <a href="index.html" class="btn">بازگشت به صفحه اصلی </a>
+</div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>هنرستان دخترانه دولتی حیدرعلی حاتمی بن رود</p>
+        <p>آموزش، مهارت آموزی و آینده سازی</p>
+		<p class="designer">
+    <span>طراحی و توسعه وب سایت</span>
+    <strong>فاطمه باقری</strong>
+    </footer>
+
+</body>
+</html>

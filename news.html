@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اخبار و اطلاعیه های هنرستان</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .news-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-top: 4px solid #C6A04A;
+            line-height: 2;
+        }
+
+        .news-card h3 {
+            color: #641B2B;
+            margin-top: 0;
+        }
+
+        .news-date {
+            color: #777;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .news-card p {
+            color: #444;
+            text-align: justify;
+        }
+
+        .notice-box {
+            background: #f5f0e8;
+            padding: 25px;
+            border-right: 5px solid #C6A04A;
+            border-radius: 10px;
+            line-height: 2.2;
+            margin-top: 20px;
+        }
+
+        .news-intro {
+            line-height: 2.2;
+            text-align: justify;
+        }
+
+        @media (max-width: 700px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>اخبار و اطلاعیه های هنرستان</h1>
+        <p>همراه با تازه ترین مطالب و اطلاع رسانی های آموزشی</p>
+    </header>
+
+    <aside class="sidebar">
+        <h3>منوی اصلی</h3>
+        <a href="index.html">صفحه اصلی</a>
+        <a href="moarefi.html">درباره هنرستان</a>
+        <a href="reshteh.html">رشته های تحصیلی</a>
+        <a href="news.html">اخبار و اطلاعیه ها</a>
+        <a href="gallery.html">گالری تصاویر</a>
+        <a href="staff.html">کادر آموزشی</a>
+        <a href="contact.html">تماس با ما</a>
+    </aside>
+
+    <main>
+
+        <section class="hero">
+            <h2>اخبار و اطلاعیه های هنرستان</h2>
+            <p>
+                هنرستان دخترانه دولتی حیدرعلی حاتمی بن رود
+                با هدف اطلاع رسانی بهتر به هنرجویان و خانواده ها،
+                این بخش را برای انتشار خبرها، اطلاعیه ها و مطالب
+                آموزشی در نظر گرفته است.
+            </p>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">آخرین اخبار</h2>
+
+            <p class="news-intro">
+                در این قسمت مطالب مربوط به فعالیت های آموزشی،
+                برنامه های فرهنگی، فعالیت های هنری و دستاوردهای
+                هنرجویان قرار می گیرد. هدف از این بخش، آگاهی بخشی
+                و ایجاد ارتباط بهتر میان هنرستان، هنرجویان و خانواده هاست.
+            </p>
+
+            <div class="news-grid">
+
+                <article class="news-card">
+                    <h3>اهمیت مهارت آموزی در هنرستان</h3>
+                    <div class="news-date">موضوع آموزشی</div>
+                    <p>
+                        یکی از مهم ترین ویژگی های آموزش های هنرستانی،
+                        توجه به یادگیری مهارت های کاربردی در کنار
+                        آموزش های نظری است. هنرجویان با انجام فعالیت های
+                        عملی و تمرین مهارت های تخصصی می توانند توانایی های
+                        خود را تقویت کنند و برای ادامه تحصیل یا ورود
+                        به محیط کار آمادگی بیشتری به دست آورند.
+                    </p>
+                </article>
+
+                <article class="news-card">
+                    <h3>نقش خلاقیت در پیشرفت هنرجویان</h3>
+                    <div class="news-date">موضوع فرهنگی و هنری</div>
+                    <p>
+                        خلاقیت یکی از عوامل مهم موفقیت در رشته های
+                        فنی و هنری است. هنرجویان با ایده پردازی،
+                        انجام پروژه های عملی و ارائه آثار خود
+                        می توانند قدرت تفکر، اعتمادبه نفس و توانایی
+                        حل مسئله را در خود پرورش دهند.
+                    </p>
+                </article><article class="news-card">
+                    <h3>اهمیت نظم و مسئولیت پذیری</h3>
+                    <div class="news-date">موضوع تربیتی</div>
+                    <p>
+                        رعایت نظم، احترام به دیگران، مسئولیت پذیری
+                        و همکاری گروهی از ویژگی هایی هستند که
+                        به موفقیت در محیط آموزشی کمک می کنند.
+                        توجه به این ارزش ها باعث ایجاد فضایی
+                        مناسب برای یادگیری و پیشرفت همه هنرجویان می شود.
+                    </p>
+                </article>
+
+                <article class="news-card">
+                    <h3>آشنایی با فرصت های شغلی رشته ها</h3>
+                    <div class="news-date">موضوع مهارتی</div>
+                    <p>
+                        هر رشته تحصیلی می تواند مسیرهای متفاوتی
+                        برای ادامه تحصیل و فعالیت حرفه ای فراهم کند.
+                        آشنایی با توانایی های مورد نیاز هر رشته،
+                        شناخت علایق و تلاش برای یادگیری مهارت های
+                        بیشتر به هنرجویان در انتخاب مسیر آینده کمک می کند.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">اطلاعیه های آموزشی</h2>
+
+            <div class="notice-box">
+                <h3>اطلاع رسانی به هنرجویان و خانواده ها</h3>
+                <p>
+                    هنرجویان گرامی و خانواده های محترم می توانند
+                    برای اطلاع از برنامه های آموزشی، زمان بندی کلاس ها،
+                    برنامه امتحانات و سایر موضوعات مربوط به هنرستان،
+                    اطلاعیه های رسمی مدرسه را دنبال کنند.
+                </p>
+
+                <p>
+                    برای دریافت اطلاعات دقیق درباره برنامه ها و
+                    موضوعات آموزشی، با مسئولان هنرستان تماس بگیرید.
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">پیام هنرستان</h2>
+
+            <div class="about-box">
+                <p>
+                    آینده ای روشن با تلاش، آگاهی و مهارت آموزی ساخته
+                    می شود. هنرستان تلاش می کند محیطی مناسب برای
+                    رشد علمی، فرهنگی و مهارتی هنرجویان فراهم کند
+                    تا هر هنرجو بتواند استعدادهای خود را شناسایی
+                    کرده و برای رسیدن به اهدافش گام بردارد.
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+   <div class="container" style="text-align:center; margin:30px auto;">
+    <a href="index.html" class="btn">بازگشت به صفحه اصلی </a>
+</div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>هنرستان دخترانه دولتی حیدرعلی حاتمی بن رود</p>
+        <p>آموزش، مهارت آموزی و ساختن آینده ای بهتر</p>
+		<p class="designer">
+    <span>طراحی و توسعه وب سایت</span>
+    <strong>فاطمه باقری</strong>
+    </footer>
+
+</body>
+</html>
